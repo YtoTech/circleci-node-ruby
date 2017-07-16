@@ -7,7 +7,7 @@ LABEL maintainer="yoan@ytotech.com"
 # TODO Do we need ruby-full?
 RUN sudo apt-get update \
 	&& sudo apt-get install -y \
-		ruby \
+		ruby ruby-dev \
 	&& sudo rm -rf /var/lib/apt/lists/*
 
 # Install Bundler.
